@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.act3b.MainActivity">
+
+
+    <TextView
+        android:text="Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/tvNombre" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvNombre"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/edNombre" />
+
+    <TextView
+        android:text="DNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNombre"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_marginTop="31dp"
+        android:id="@+id/tvDNI" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edDNI"
+        android:layout_alignBaseline="@+id/tvDNI"
+        android:layout_alignBottom="@+id/tvDNI"
+        android:layout_alignStart="@+id/edNombre" />
+
+    <TextView
+        android:text="Fecha Nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edDNI"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvFecha"
+        android:layout_alignStart="@+id/tvDNI"
+        android:layout_toStartOf="@+id/edFecha" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edFecha"
+        android:layout_alignTop="@+id/tvFecha"
+        android:layout_alignStart="@+id/edDNI" />
+
+    <TextView
+        android:text="Fecha Nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvSexo"
+        android:layout_alignStart="@+id/edFecha"
+        android:layout_toStartOf="@+id/edFecha" />
+
+    <Button
+        android:text="Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEnviar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/tvSexo"
+        android:layout_alignStart="@+id/tvFecha">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:id="@+id/rbMascle"
+            android:layout_marginTop="5dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:id="@+id/rbFemella"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Sexo:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:id="@+id/textView8" />
+
+
+</RelativeLayout>

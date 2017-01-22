@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "770547739939",
+    "project_id": "actividad-android-drive"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770547739939:android:ebb93e4a8b2ca409",
+        "android_client_info": {
+          "package_name": "com.example.usuario.act3c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770547739939-rcvreeu7h0bbo6t32go1p25qn6pj19ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.usuario.act3c",
+            "certificate_hash": "99CEAA8751CB1F019B23D65C2CAB70F9E03770DC"
+          }
+        },
+        {
+          "client_id": "770547739939-ig20v8oee2p8phvo6bubeds77p6g6hv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGGFWEsj2ACTurJ6-s3eDTeHJxpan_y5Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
